@@ -29,7 +29,7 @@ RUN apt-get update \
 
 # Create user and group
 RUN mkdir -p /opt/dropbox /opt/dropbox/.dropbox /opt/dropbox/Dropbox \
- && useradd --home-dir /opt/dropbox --comment "Dropbox Daemon Account" --user-group --shell /usr/sbin/nologin dropbox \
+ && useradd --home-dir /opt/dropbox/Dropbox --comment "Dropbox Daemon Account" --user-group --shell /usr/sbin/nologin dropbox \
  && chown -R dropbox:dropbox /opt/dropbox
 
 # https://help.dropbox.com/installs-integrations/desktop/linux-repository
